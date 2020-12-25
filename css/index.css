@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Bowlby+One+SC|Orbitron&display=swap');
+
+:root{
+scroll-behavior: smooth
+}
+
+body{
+    max-width: 1920px;
+    margin: auto;
+    overflow-x: hidden;
+    background-color: black;
+
+}
+*{
+    -webkit-text-fill-color: white;
+}
+#start_page_header{ 
+    background-image: url(../img/yoda.jpg);
+    height: 900px;
+        text-align: center;
+        justify-content: space-around;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+header nav .menu {
+display: flex;
+ list-style-type: none;
+ justify-content: space-between;
+margin: 20px;
+
+
+        }
+header nav .menu a {
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    border: 1px solid transparent;
+    padding: 0;
+     transition: 0.4s ease-in-out;
+}
+header nav .menu a:hover{
+    box-shadow: inset 0 -60px 0 grey, 2px 2px 3px rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+header nav .menu a:hover{
+    border: 1px solid white;
+
+}
+input, textarea,button{
+    -webkit-text-fill-color: black;
+}
+
+#information_text{
+   font-size: 100px;
+   text-align: center;
+}
+#text{
+    text-align: center;
+    font-size: 150px;
+    text-shadow: 15px;
+
+}
+
+.carousel-inner{
+  margin: 2% 25%;
+}
+.carusel_product_name{
+     font-family: 'Bowlby One SC', cursive;
+     font-size: 45px;
+}
+.carusel_product_info{
+      font-family: 'Bebas Neue', cursive;
+      font-size: 30px;
+}
+main article .product_name{
+    font-family: 'Bowlby One SC', cursive;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+main article .information_about_product{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin: 15px;
+}
+main article .price_of_product{
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+main article .buttons{
+    display: flex;
+    justify-content: space-between;
+
+}
+main article div .buy_button , .info_button{
+ text-decoration: none;
+  outline: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+  margin: 10px 20px;   font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: .8s cubic-bezier(.165,.84,.44,1);
+}
+main article div .buy_button:before{
+content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: .8s cubic-bezier(.165,.84,.44,1);
+}
+
+main article div .buy_button:hover{
+background: rgba(255,255,255,0);
+}
+main article div .buy_button:hover:before{
+     bottom: 0%;
+  top: auto;
+  height: 100%;
+}
+main article div .info_button:before{
+content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: .8s cubic-bezier(.165,.84,.44,1);
+}
+
+main article div .info_button:hover{
+background: rgba(255,255,255,0);
+}
+main article div .info_button:hover:before{
+     bottom: 0%;
+  top: auto;
+  height: 100%;
+}
+#back{
+    text-align: center;
+    font-size: 100px;
+
+
+}
+#catalog{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.message{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+#product-list article img {
+    display: block;
+    width: 100%;
+}
+article{
+        border: 1px solid white;
+}
+#product-list article .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+@media (min-width: 660px) {
+#product-list {
+    border-image-width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 5px;
+        grid-gap: 10px;}}
+
+@media (min-width: 920px) {
+ #product-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+footer{
+    background-image: url(../png/mi.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#message_number{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+
+
+/*.about_me {
+
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 140px ;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 5% 46%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: #0faf0d;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+  transition: .3s;
+}
+.about_me:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46,229,157,.4);
+  color: #0faf0d;
+  transform: translateY(-7px);
+}*/
+.info_about_admin{
+    font-size: 35px;
+    font-family: 'Rubik One', sans-serif;
+
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #09e750 33%, #ad304d 66%, #b0d1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: 20px auto;
+}
+#back{
+ text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 12px 40px;
+  margin: 150px 50px;
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #1cb50d 0%, #09691d  50%, #070d9a 100%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);
+  transition: .5s;
+}
+#back:hover {
+  box-shadow: 0 0 0 0 rgba(0,40,120,0);
+  background-position: 0 0;
+  }
